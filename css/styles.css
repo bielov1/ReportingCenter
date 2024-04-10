@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inika', sans-serif;
+}
+
+body {
+    background-color: #131313;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease 0.3s;
+    box-shadow: rgba(36, 2, 2, 0.24) 0px 3px 8px;
+}
+
+a:active,
+a:focus,
+a:hover {
+    opacity: 0.4;
+    transform: translateY(0.5px);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title p:first-child {
+    text-transform: uppercase;
+}
+
+.title p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.title span {
+    text-decoration: underline;
+}
+
+#kpi__shield {
+    width: 150px;
+    height: 100%;
+    margin-left: 46px;
+    margin-top: -20px;
+}
+
+#my__photo {
+    width: 150px;
+    height: 100%;
+    margin-right: 46px;
+}
+
+.title__text {
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.my__labs {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 5px;
+
+}
+
+.labs__content {
+    display: flex;
+}
+
+.lab {
+    border: white 1px solid;
+    border-radius: 23px;
+    padding: 0;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+.listing {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    max-width: 400px;
+    max-height: 500px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+#list__item {
+    border: white 1px solid;
+    border-radius: 23px;
+    flex: 2 1 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 24px;
+}
+
+#list__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.list__content {
+    border: white 1px solid;
+    padding: 10px 15px 0 15px;
+    height: 950px;
+    width: 75%;
+}
+
+.list__content h3:first-child {
+    margin-bottom: 10px;
+}
+
+.list__content p {
+    margin-left: 15px;
+}
+
+.list__content ul {
+    margin-left: 20px;
+}
+
+.list__content li {
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.list-content a:hover,
+a:focus,
+a:active {
+    color: #aaaaaa;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#github {
+    text-decoration: underline;
+}
+
+td:not(:last-child) {
+    width:15%;
+}
+#table {
+    border-collapse: collapse;
+    border: white 1px solid;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 5px 0 5px 5px;
+}
