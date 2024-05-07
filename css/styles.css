@@ -95,7 +95,7 @@ a:hover {
     margin-right: 15px;
 }
 
-#list__item {
+.list__item {
     border: white 1px solid;
     border-radius: 23px;
     flex: 2 1 auto;
@@ -106,7 +106,7 @@ a:hover {
     font-size: 24px;
 }
 
-#list__item:not(:last-child) {
+.list__item:not(:last-child) {
     margin-bottom: 15px;
 }
 
@@ -143,6 +143,7 @@ a:active {
     text-decoration: underline;
 }
 
+
 #github {
     text-decoration: underline;
 }
@@ -163,4 +164,18 @@ td {
 
 .img_ex {
     width: 100%;
+}
+
+.sub {
+    margin-left: 80px;
+}
+
+.lab3_img_app {
+    width: 1300px
+}
+
+.lab3_img_table {
+    max-height: 85%;
+    max-width: 100%;
+    width: 800px;
 }
