@@ -179,3 +179,10 @@ td {
     max-width: 100%;
     width: 800px;
 }
+
+.img_app {
+    max-height: 900px;
+    max-width: 1300px;
+    height: 100%;
+    width: 100%;
+}
