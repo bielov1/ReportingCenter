@@ -34,8 +34,8 @@
                     <a href="../lab1/labw1.html" class="lab">Лабораторна робота №1</a>
                     <a href="../lab2/labw2.html" class="lab">Лабораторна робота №2</a>
                     <a href="../lab3/labw3.html" class="lab">Лабораторна робота №3</a>
-                    <a href="labw4.html" class="lab">Лабораторна робота №4</a>
-                    <a href="../lab5/labw5.html" class="lab">Лабораторна робота №5</a>
+                    <a href="../lab4/labw4.html" class="lab">Лабораторна робота №4</a>
+                    <a href="labw5.html" class="lab">Лабораторна робота №5</a>
                     <a href="#" class="lab">Лабораторна робота №6</a>
                     <a href="#" class="lab">Лабораторна робота №7</a>
                     <a href="#" class="lab">Лабораторна робота №8</a>
@@ -45,18 +45,38 @@
                     <div class="listing">
                         <a href="topic_aim.html" class="list__item">Тема, мета, місце розташування</a>
                         <a href="task.html" class="list__item">Завдання</a>
-                        <a href="explanation.html" class="list__item">Пояснення</a>
-                        <a href="app_view.html" class="list__item">Стайт на різних пристроях</a>
-                        <a href="desktop.html" class="list__item sub">Десктоп</a>
-                        <a href="tablet.html" class="list__item sub">Планшет</a>
-                        <a href="smartphone.html" class="list__item sub">Смартфон</a>
-                        <a href="code.html" class="list__item">Код сторінки</a>
+                        <a href="js_func.html" class="list__item">Способи функціонального застосування Javascript</a>
+                        <a href="url_scheme.html" class="list__item sub">Схема URL</a>
+                        <a href="event_lis.html" class="list__item sub">Обробник подій</a>
+                        <a href="entity.html" class="list__item sub">Підстановка (entity)</a>
+                        <a href="script.html" class="list__item sub">Вставка (тег SCRIPT)</a>
+                        <a href="task4.html" class="list__item">Завдання 4 пункту</a>
+                        <a href="task6.html" class="list__item">Завдання 6 пункту</a>
                         <a href="conclusions.html" class="list__item">Висновок</a>  
                     </div>
                     <div class="list__content">
+                        <h2>Вставка(тег script)</h2>
+
                         <p>
-                            <img class="img_app" src="../img/maket.png" alt="" />
+                            Використання елементу &lt;script&gt; в HTML надає можливість інтегрувати код JavaScript прямо у веб-сторінку.
+                            Завдяки цьому розробники можуть створювати та запускати скрипти, які здатні динамічно змінювати контент сторінки, 
+                            забезпечувати інтерактивність з користувачем та виконувати інші динамічні дії.
                         </p>
+
+                        <p>Приклад:</p>
+
+                        <p>
+                            &lt;body&gt;
+                            <xmp>
+                                ....
+                                <script>
+                                        alert("Я скрипт");
+                                    </script>
+                            </xmp>
+                            &lt;/body&gt;
+                        </p>
+
+                        <h4>Важливо використовувати тег <span>&lt;script&gt;</span> в кінці тегу &lt;body&gt;, щоб сторінка спочатку завантажила теги HTML та CSS, і лише в кінці js.</h4>
                     </div>
                 </div>
             </main>
