@@ -64,7 +64,7 @@
               
                         <pre>
                             let eventButton = document.getElementById('eventButton');
-                            eventButton.addEventListener('click', function () {
+                            eventButton.addEventListener('click', () => {
                               let result = confirm('Ви любите піцу?');
                               if (result) {
                                 alert("Ви натиснули 'Так'!");
@@ -82,7 +82,7 @@
             <script>
 
                 let eventButton = document.getElementById('eventButton');
-                eventButton.addEventListener('click', function () {
+                eventButton.addEventListener('click', () => {
                   let result = confirm('Ви любите піцу?');
                   if (result) {
                     alert("Ви натиснули 'Так'!");
