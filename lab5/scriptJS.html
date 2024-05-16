@@ -56,42 +56,71 @@
                     <a href="conclusions.html" class="list__item">Висновок</a>  
                 </div>
                 <div class="list__content">
-                    <h2>Підствки в JavaScript включає в себе:</h2>
-                    <p>Приклад використання шаблонних рядків:</p>
+                    <h3>Застосування cценарію JavaScript у власному сайті</h3>
+
+                    <h4>Скролінг іграшок в "в тренді"</h4>
+                    <img src="../img/js_scrolling.png" class="lab3_img_app"/>
+                    <p>
+                        Застосування сценарію JavaScript для скролінга іграшок надає сайту більшу динамічність і інтерактивність.
+                        Це дозволяє користувачам зрозуміти, які іграшки зараз в тренді та що можна вибрати швидко дитині в подарунок.
+                        Плавний скролінг створює приємний візуальний єфект і покращує загальне враження сайту.
+                    </p>
+                    <br>
+                    <h4>Вирізка з HTML коду</h4>
                     <xmp>
-                        const firstName = 'Олександр';
-                        const lastName = 'Петренко';
-                        const age = 25;
-                        
-                        const greeting = `Вітаю, мене звати ${firstName} ${lastName} і мені ${age} років.`;
-                        
-                        console.log(greeting);
-                        // Виведе: Вітаю, мене звати Олександр Петренко і мені 25 років.
+                        <div class="hot_sellers_items">
+                            <button class="scroll-left" onclick="left()">&lt;</button>
+                            
+                            ...
+
+                            <button class="scroll-right" onclick="right()">&gt;</button>
+                        </div>   
                     </xmp>
 
-                    <p>Приклад використання конкатенації рядків:</p>
-                    <xmp>
-                        const city = 'Київ';
-                        const country = 'Україна';
-                        
-                        const location = 'Я живу у місті ' + city + ', ' + country + '.';
-                        
-                        console.log(location);
-                        // Виведе: Я живу у місті Київ, Україна.
-                    </xmp>
-
-                    <p>Приклад використання функції для генерації рядка:</p>
-                    <xmp>
-                        function introduce(name, profession) {
-                            return `Дозвольте відрекомендуватися, моє ім'я ${name} і я ${profession}.`;
+                    <h4>Вирізка з CSS коду</h4>
+                    <pre>
+                        .scroll-left,
+                        .scroll-right {
+                          overflow: hidden;
+                          position: absolute;
+                          background: rgba(0, 0, 0, 0.5); 
+                          border: none;
+                          color: #fff;
+                          font-size: 24px;
+                          cursor: pointer;
+                          padding: 10px;
+                          z-index: 1;
                         }
-                          
-                        const name = 'Марія';
-                        const profession = 'програміст';
-                          
-                        console.log(introduce(name, profession));
-                        // Виведе: Дозвольте відрекомендуватися, моє ім'я Марія і я програміст.
-                    </xmp>
+                        
+                        .scroll-left {
+                          left: 0;
+                        }
+                        
+                        .scroll-right {
+                          right: 0;
+                        }
+                    </pre>
+
+                    <h4>Вирізка з JS коду</h4>
+                    <pre>
+                        function left() {
+                            const hotSellersItems = document.querySelector('.hot_sellers_items');
+                            const scrollAmount = 200;
+                            hotSellersItems.scrollBy({
+                                left: -scrollAmount,
+                                behavior: 'smooth'
+                            });
+                        }
+                        
+                        function right() {
+                            const hotSellersItems = document.querySelector('.hot_sellers_items');
+                            const scrollAmount = 200;
+                            hotSellersItems.scrollBy({
+                                left: scrollAmount,
+                                behavior: 'smooth'
+                            });
+                        }                       
+                    </pre>
                 </div>
             </div>
         </main>
