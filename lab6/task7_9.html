@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">    
+    </head>
+    <body>
+        <header class="title">
+            <div class="kpi__sheild__container">
+                <img id="kpi__shield" src="../img/KPI_shield.png" alt="" >
+            </div>
+            <div class="title__text">
+                <p>
+                    ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br/>
+                    З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<br/>
+                    ОСНОВИ FRONTED та BACKEND РОЗРОБОК"
+                </p>
+                <p>
+                    Студент групи ІО-11 <span>Бєлов Олег Данилович</span>
+                </p>
+            </div>
+            <div class="my__photo__container">
+                <img id="my__photo" src="../img/me.jpg" alt="" >
+            </div>
+        </header>
+        <hr>
+        <main>
+            <div class="my__labs">
+                <a href="../lab1/labw1.html" class="lab">Лабораторна робота №1</a>
+                <a href="../lab2/labw2.html" class="lab">Лабораторна робота №2</a>
+                <a href="../lab3/labw3.html" class="lab">Лабораторна робота №3</a>
+                <a href="../lab4/labw4.html" class="lab">Лабораторна робота №4</a>
+                <a href="../lab5/labw5.html" class="lab">Лабораторна робота №5</a>
+                <a href="labw6.html" class="lab">Лабораторна робота №6</a>
+                <a href="#" class="lab">Лабораторна робота №7</a>
+                <a href="#" class="lab">Лабораторна робота №8</a>
+                <a href="#" class="lab">Лабораторна робота №9</a>
+            </div>
+            <div class="labs__content">
+                <div class="listing">
+                    <a href="topic_aims.html" class="list__item">Тема, мета та розташування лаби 5.1</a>
+                    <a href="labw5_1.html" class="list__item">Постановка задачі для лабораторної 5.1</a> 
+                    <a href="task1_3_5.html" class="list__item sub">Завдання 1,3,5</a>
+                    <a href="task7_9.html" class="list__item sub">Завдання 7,9</a> 
+                    <a href="task10.html" class="list__item sub">Завдання 10</a>
+                    <a href="topic_aim6.html" class="list__item">Тема, мета та розташування лаби 6</a>
+                    <a href="tasks6.html" class="list__item">Постановка задачі для лабораторної 6</a>
+                    <a href="lab6_task1_3_5.html" class="list__item sub">Завдання 1,3,5</a>
+                    <a href="lab6_task7_8_9.html" class="list__item sub">Завдання 7,8,9</a>
+                    <a href="lab6_task10.html" class="list__item sub">Завдання 10</a>
+                    <a href="conclusions.html" class="list__item">Висновоки</a> 
+                </div>
+                <div class="list__content">
+                    <h2>Завдання 7</h2>
+                    <img src="../img/lab51_7.png" alt="var1", class="lab51_img_var"/>
+
+                    <h4>JavaScript код</h4>
+                    <pre>
+                        console.log("Завдання 7");
+                        class Client {
+                            #login;
+                            #email;
+            
+                            constructor(login, email) {
+                                this.#login = login;
+                                this.#email = email;
+                            }
+            
+                            get getLogin() {
+                                return this.#login;
+                            }
+            
+                            set setLogin(newLogin) {
+                                this.#login = newLogin;
+                            }
+            
+                            get getEmail() {
+                                return this.#email;
+                            }
+            
+                            set setEmail(newEmail) {
+                                this.#email = newEmail;
+                            }
+                        }
+            
+                        //Приклад використання класу Client
+                        const client = new Client("Oleh Bielov", "qwerty@lll.kpi.ua");
+            
+                        console.log(client.getLogin);
+                        console.log(client.getEmail);
+            
+                        client.setLogin = "Bogdan Ill";
+                        client.setEmail = "asdfgh@gmail.com";
+            
+                        console.log(client.getLogin);
+                        console.log(client.getEmail);                        
+                    </pre>
+
+                    <h4>Результати 7</h4>
+                    <img src="../img/res_7.png" alt="Result"/>
+
+                    <br>
+                    <h2>Завдання 9</h2>
+                    <img src="../img/lab51_9.png" alt="var1", class="lab51_img_var"/>
+
+                    <h4>JavaScript код</h4>
+                    <pre>
+                        console.log("Завдання 9");
+                        const tweets = [
+                            { id: "000", likes: 5, tags: ["js", "nodejs"] },
+                            { id: "001", likes: 2, tags: ["html", "css"] },
+                            { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+                            { id: "003", likes: 8, tags: ["css", "react"] },
+                            { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+                        ];
+        
+                        function getTagCount(tweets) {
+                            const tagCount = {};
+        
+                            tweets.forEach(tweet => {
+                                tweet.tags.forEach(tag => {
+                                    if (tagCount[tag]) {
+                                        tagCount[tag]++;
+                                    } else {
+                                        tagCount[tag] = 1;
+                                    }
+                                });
+                            });
+        
+                            return tagCount;
+                        }
+        
+                        const result = getTagCount(tweets);
+                        console.log(result);
+                    </pre>
+
+                    <h4>Результати 9</h4>
+                    <img src="../img/res_9.png" alt="Result"/>
+                </div>
+            </div>
+        </main>
+
+        
+        <script>
+            console.log("Завдання 7");
+            class Client {
+                #login;
+                #email;
+
+                constructor(login, email) {
+                    this.#login = login;
+                    this.#email = email;
+                }
+
+                get getLogin() {
+                    return this.#login;
+                }
+
+                set setLogin(newLogin) {
+                    this.#login = newLogin;
+                }
+
+                get getEmail() {
+                    return this.#email;
+                }
+
+                set setEmail(newEmail) {
+                    this.#email = newEmail;
+                }
+            }
+
+            //Приклад використання класу Client
+            const client = new Client("Oleh Bielov", "qwerty@lll.kpi.ua");
+
+            console.log(client.getLogin);
+            console.log(client.getEmail);
+
+            client.setLogin = "Bogdan Ill";
+            client.setEmail = "asdfgh@gmail.com";
+
+            console.log(client.getLogin);
+            console.log(client.getEmail);
+        </script>
+
+        <script>
+            console.log("Завдання 9");
+            const tweets = [
+                { id: "000", likes: 5, tags: ["js", "nodejs"] },
+                { id: "001", likes: 2, tags: ["html", "css"] },
+                { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+                { id: "003", likes: 8, tags: ["css", "react"] },
+                { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+            ];
+
+            function getTagCount(tweets) {
+                const tagCount = {};
+
+                tweets.forEach(tweet => {
+                    tweet.tags.forEach(tag => {
+                        if (tagCount[tag]) {
+                            tagCount[tag]++;
+                        } else {
+                            tagCount[tag] = 1;
+                        }
+                    });
+                });
+
+                return tagCount;
+            }
+
+            const result = getTagCount(tweets);
+            console.log(result);
+        </script>
+    </body>
+</html>

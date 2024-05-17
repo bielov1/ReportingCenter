@@ -188,3 +188,28 @@ td {
     height: 100%;
     width: 100%;
 }
+
+.lab51_img_var {
+    width: 600px;
+    height: 300px;
+}
+
+.task-implementation {
+    background-color: green;
+    padding: 10px 10px;
+    width: 35%;
+}
+
+.task-implementation button {
+    color: #000;
+}
+
+.task-implementation input{
+    color: #000;
+}
+
+.task-implementation form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}

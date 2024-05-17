@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">    
+    </head>
+    <body>
+        <header class="title">
+            <div class="kpi__sheild__container">
+                <img id="kpi__shield" src="../img/KPI_shield.png" alt="" >
+            </div>
+            <div class="title__text">
+                <p>
+                    ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br/>
+                    З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<br/>
+                    ОСНОВИ FRONTED та BACKEND РОЗРОБОК"
+                </p>
+                <p>
+                    Студент групи ІО-11 <span>Бєлов Олег Данилович</span>
+                </p>
+            </div>
+            <div class="my__photo__container">
+                <img id="my__photo" src="../img/me.jpg" alt="" >
+            </div>
+        </header>
+        <hr>
+        <main>
+            <div class="my__labs">
+                <a href="../lab1/labw1.html" class="lab">Лабораторна робота №1</a>
+                <a href="../lab2/labw2.html" class="lab">Лабораторна робота №2</a>
+                <a href="../lab3/labw3.html" class="lab">Лабораторна робота №3</a>
+                <a href="../lab4/labw4.html" class="lab">Лабораторна робота №4</a>
+                <a href="../lab5/labw5.html" class="lab">Лабораторна робота №5</a>
+                <a href="labw6.html" class="lab">Лабораторна робота №6</a>
+                <a href="#" class="lab">Лабораторна робота №7</a>
+                <a href="#" class="lab">Лабораторна робота №8</a>
+                <a href="#" class="lab">Лабораторна робота №9</a>
+            </div>
+            <div class="labs__content">
+                <div class="listing">
+                    <a href="topic_aims.html" class="list__item">Тема, мета та розташування лаби 5.1</a>
+                    <a href="labw5_1.html" class="list__item">Постановка задачі для лабораторної 5.1</a> 
+                    <a href="task1_3_5.html" class="list__item sub">Завдання 1,3,5</a>
+                    <a href="task7_9.html" class="list__item sub">Завдання 7,9</a> 
+                    <a href="task10.html" class="list__item sub">Завдання 10</a> 
+                    <a href="topic_aim6.html" class="list__item">Тема, мета та розташування лаби 6</a>
+                    <a href="tasks6.html" class="list__item">Постановка задачі для лабораторної 6</a>
+                    <a href="lab6_task1_3_5.html" class="list__item sub">Завдання 1,3,5</a>
+                    <a href="lab6_task7_8_9.html" class="list__item sub">Завдання 7,8,9</a>
+                    <a href="lab6_task10.html" class="list__item sub">Завдання 10</a>
+                    <a href="conclusions.html" class="list__item">Висновоки</a> 
+                </div>
+                <div class="list__content">
+                    <h2>Завдання 7</h2>
+                    <p>TML містить список категорій ul#categories.</p>
+                    <xmp>
+                      <ul id="categories">
+                        <li class="item">
+                          <h2>Animals</h2>
+                          <ul>
+                            <li>Cat</li>
+                            <li>Hamster</li>
+                            <li>Horse</li>
+                            <li>Parrot</li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <h2>Products</h2>
+                          <ul>
+                            <li>Bread</li>
+                            <li>Prasley</li>
+                            <li>Cheese</li>
+                          </ul>
+                        </li>
+                        <li class="item">
+                          <h2>Technologies</h2>
+                          <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </xmp>
+                    <p>Напиши скрипт, який:</p>
+                    <ul>
+                      <li>1.	Порахує і виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.</li>
+                      <li>2.	Для кожного элемента li.item у списку ul#categories, знайде і виведе в консоль текст заголовку елемента (тегу h2) і кількість елементів в категорії (усіх li, вкладених в нього).li
+                    </ul>
+                    <p>Для виконання цього завдання потрібно використати метод forEach() і властивості навігації по DOM.</p>
+                    <p>В результаті, в консолі будуть виведені наступні повідомлення.</p>
+                    <img src="../img/lab6_task7_example.png" alt="var1", class="lab51_img_var"/>
+
+                    <p>дані</p>
+                    <ul id="categories">
+                      <li class="item">
+                        <h2>Animals</h2>
+                        <ul>
+                          <li>Cat</li>
+                          <li>Hamster</li>
+                          <li>Horse</li>
+                          <li>Parrot</li>
+                        </ul>
+                      </li>
+                      <li class="item">
+                        <h2>Products</h2>
+                        <ul>
+                          <li>Bread</li>
+                          <li>Prasley</li>
+                          <li>Cheese</li>
+                        </ul>
+                      </li>
+                      <li class="item">
+                        <h2>Technologies</h2>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>React</li>
+                          <li>Node.js</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <h4>JavaScript код</h4>
+                    <pre>
+                        const categoriesList = document.getElementById('categories');
+                        const resultsElement = document.getElementById('results');
+            
+                        const categoryItemsArray = Array.from(categoriesList.children);
+                        const categoryCount = categoryItemsArray.filter(item => item.matches('li.item')).length;
+            
+                        console.log(`Кількість категорій: ${categoryCount}`);
+            
+                        categoryItemsArray.forEach(categoryItem => {
+                            if (categoryItem.matches('li.item')) {
+                                const categoryTitle = categoryItem.firstElementChild.textContent;
+                                const categoryElements = categoryItem.lastElementChild.children;
+                                const elementCount = categoryElements.length;
+            
+                                console.log(`Категорія: ${categoryTitle}`);
+                                console.log(`Кількість елементів: ${elementCount}`);
+                            }
+                        });
+                    </pre>
+
+                    <h4>Результати 7</h4>
+                    <img src="../img/res_lab6_7.png" alt="Result"/>
+
+                    <br>
+                    <h2>Завдання 8</h2>
+                    <img src="../img/lab6_8.png" alt="Result"/>
+
+                    <h4>JavaScript код</h4>
+                    <pre>
+                        const form = document.querySelector('.login-form');
+
+                        const handleSubmit = (event) => {
+                            event.preventDefault();
+            
+                            const email = form.elements.email.value.trim();
+                            const password = form.elements.password.value.trim();
+            
+                            if (!email || !password) {
+                                alert("Заповніть, будь ласка, всі поля паролю та пошти");
+                                return;
+                            }
+            
+                            const accInfo = {
+                                email: email,
+                                password: password
+                            };
+            
+                            console.log(accInfo);
+                            form.reset();
+                        };
+            
+                        form.addEventListener('submit', handleSubmit);
+                    </pre>
+
+                    <h2>Спробувати</h2>
+                    <div class="task-implementation">
+                        <h2>Виконання 8 завдання</h2>
+                        <p>ЗАВДАННЯ 8</p>
+                        <form class="login-form">
+                            <label>
+                              Email
+                              <input type="email" name="email" />
+                            </label>
+                            <label>
+                              Password
+                              <input type="password" name="password" />
+                            </label>
+                            <button type="submit">Log in</button>
+                          </form>
+                    </div>
+
+                    <h4>Результати 8</h4>
+                    <img src="../img/res_lab6_8.png" alt="Result"/>
+
+                    <br>
+                    <h2>Завдання 9</h2>
+                    <img src="../img/lab6_9.png" alt="Result"/>
+
+                    <h4>JavaScript код</h4>
+                    <pre>
+                        function getRandomHexColor() {
+                            return `#${Math.floor(Math.random() * 16777215)
+                                .toString(16)
+                                .padStart(6, 0)}`;
+                        }
+                        const changeColorButton = document.querySelector('.change-color');
+                        const colorSpan = document.querySelector('.color');
+            
+                        changeColorButton.addEventListener('click', () => {
+                            const randomColor = getRandomHexColor();
+                            document.body.style.backgroundColor = randomColor;
+                            colorSpan.textContent = randomColor;
+                        });
+                    </pre>
+                    <h2>Спробувати</h2>
+                    <div class="task-implementation">
+                        <div class="widget">
+                            <p>Background color: <span class="color">-</span></p>
+                            <button type="button" class="change-color">Change color</button>
+                        </div>
+                    </div>
+
+                    <h4>Результати 9</h4>
+                    <img src="../img/res_lab6_9.png" alt="Result"/>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            const categoriesList = document.getElementById('categories');
+            const resultsElement = document.getElementById('results');
+
+            const categoryItemsArray = Array.from(categoriesList.children);
+            const categoryCount = categoryItemsArray.filter(item => item.matches('li.item')).length;
+
+            console.log(`Кількість категорій: ${categoryCount}`);
+
+            categoryItemsArray.forEach(categoryItem => {
+                if (categoryItem.matches('li.item')) {
+                    const categoryTitle = categoryItem.firstElementChild.textContent;
+                    const categoryElements = categoryItem.lastElementChild.children;
+                    const elementCount = categoryElements.length;
+
+                    console.log(`Категорія: ${categoryTitle}`);
+                    console.log(`Кількість елементів: ${elementCount}`);
+                }
+            });
+        </script>
+
+        <script>
+            const form = document.querySelector('.login-form');
+
+            const handleSubmit = (event) => {
+                event.preventDefault();
+
+                const email = form.elements.email.value.trim();
+                const password = form.elements.password.value.trim();
+
+                if (!email || !password) {
+                    alert("Заповніть, будь ласка, всі поля паролю та пошти");
+                    return;
+                }
+
+                const accInfo = {
+                    email: email,
+                    password: password
+                };
+
+                console.log(accInfo);
+                form.reset();
+            };
+
+            form.addEventListener('submit', handleSubmit);
+        </script>
+
+        <script>
+            function getRandomHexColor() {
+                return `#${Math.floor(Math.random() * 16777215)
+                    .toString(16)
+                    .padStart(6, 0)}`;
+            }
+            const changeColorButton = document.querySelector('.change-color');
+            const colorSpan = document.querySelector('.color');
+
+            changeColorButton.addEventListener('click', () => {
+                const randomColor = getRandomHexColor();
+                document.body.style.backgroundColor = randomColor;
+                colorSpan.textContent = randomColor;
+            });
+        </script>
+    </body>
+</html>
